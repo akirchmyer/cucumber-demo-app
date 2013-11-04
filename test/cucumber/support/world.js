@@ -1,5 +1,6 @@
 var zombie = require('zombie');
 var World = function World(callback) {
+	this.assert = require('assert');
 	this.browser = new zombie(); // this.browser will be available in step definitions
 
 	this.visit = function(url, callback) {

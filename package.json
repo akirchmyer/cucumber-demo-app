@@ -11,6 +11,8 @@
   "devDependencies": {
 	  "grunt": "latest",
 	  "grunt-contrib-qunit": "latest",
-	  "grunt-contrib-connect": "latest"
+	  "grunt-contrib-connect": "latest",
+	  "cucumber": "latest",
+	  "zombie": "latest"
   }
 }

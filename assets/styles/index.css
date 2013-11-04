@@ -1,0 +1,11 @@
+.libraries .tab-content {
+	border-left: 1px solid #ddd;
+
+}
+.libraries .tab-pane {
+	padding: 20px;
+}
+.libraries .tab-pane a.official {
+	display: block;
+	padding-top: 10px;
+}

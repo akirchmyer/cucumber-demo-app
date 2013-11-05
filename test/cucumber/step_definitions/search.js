@@ -18,6 +18,20 @@ var tabbedComponentTests = function () {
 		callback();
 	});
 
+	this.Given(/^The home page has loaded$/, function(callback) {
+		this.assert.equal(this.browser.location.href, 'http://localhost:9001/');
+		callback();
+	});
+
+	this.Then(/^the search box exists with the text "([^"]*)"$/, function(arg1, callback) {
+		this.assert(this.browser.query('.search-query[placeholder="Search this site"]'));
+		callback();
+	});
+
+	this.Then(/^A search button exists with the test "([^"]*)"$/, function(arg1, callback) {
+		this.assert(this.browser.query('.search-button[value="Search"]'));
+		callback();
+	});
 };
 
 module.exports = tabbedComponentTests;

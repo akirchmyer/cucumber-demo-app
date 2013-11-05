@@ -6,9 +6,6 @@ module.exports = function(grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     // Task configuration.
-    qunit: {
-      files: ['test/**/*.html']
-    },
     connect: {
       server: {
         options: {
@@ -21,10 +18,9 @@ module.exports = function(grunt) {
   });
 
   // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   // Default task.
-  grunt.registerTask('default', ['qunit']);
+  grunt.registerTask('default', []);
 
 };

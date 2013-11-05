@@ -3,6 +3,7 @@ Feature: Tabbed Component
 	As a user
 	I want a list of libraries used and details about each library
 
+	@include
 	Scenario: User visits the home page
 		Given the home page has loaded
 		When the tabbed component renders
@@ -11,6 +12,7 @@ Feature: Tabbed Component
 		And the tabbed component has a header that says "Libraries used by this app"
 		And the "Bootstrap" tab is selected
 
+	@include
 	Scenario: User wants information on jQuery
 		Given the tabbed component renders
 		When the user clicks on the "jQuery" tab
